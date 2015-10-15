@@ -32,6 +32,10 @@
 * [http://angular-tips.com/blog/2015/09/migrating-directives-to-angular-2/](http://angular-tips.com/blog/2015/09/migrating-directives-to-angular-2/)
 * [https://github.com/angular/angular/blob/master/modules/angular2/docs/core/02_directives.md](https://github.com/angular/angular/blob/master/modules/angular2/docs/core/02_directives.md)
 
+###### lifecycle
+
+* [http://learnangular2.com/lifecycle/](http://learnangular2.com/lifecycle/)
+
 ###### authentication 
 
 * [https://auth0.com/blog/2015/05/14/creating-your-first-real-world-angular-2-app-from-authentication-to-calling-an-api-and-everything-in-between/](https://auth0.com/blog/2015/05/14/creating-your-first-real-world-angular-2-app-from-authentication-to-calling-an-api-and-everything-in-between/)
