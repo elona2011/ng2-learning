@@ -7,7 +7,6 @@
 * [https://medium.com/@daviddentoom/how-to-build-an-angular-2-application-with-routing-and-services-67ead73db96e](https://medium.com/@daviddentoom/how-to-build-an-angular-2-application-with-routing-and-services-67ead73db96e)
 * [https://angularclass.com/awesome-angular2/](https://angularclass.com/awesome-angular2/)
 * [https://www.reddit.com/r/Angular2/](https://www.reddit.com/r/Angular2/)
-* [https://docs.google.com/document/d/19jHbsXeYj2QiZ-cGS_mA3nyaU86gLeonjU2Tfzm1J5Y/edit?pli=1](https://docs.google.com/document/d/19jHbsXeYj2QiZ-cGS_mA3nyaU86gLeonjU2Tfzm1J5Y/edit?pli=1)
 
 ###### ABC
 
