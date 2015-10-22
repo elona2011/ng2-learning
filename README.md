@@ -53,6 +53,7 @@
 ## css:
 
 * [http://www.w3cplus.com/](http://www.w3cplus.com/)
+* [http://sass-lang.com/documentation/file.SASS_REFERENCE.html](http://sass-lang.com/documentation/file.SASS_REFERENCE.html)
 * [http://purecss.io/](http://purecss.io/)
 
 ## typescript:
