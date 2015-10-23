@@ -23,6 +23,10 @@
 
 * [http://html5hive.org/getting-started-with-angular-2/](http://html5hive.org/getting-started-with-angular-2/)
 
+###### Template
+
+* [http://victorsavkin.com/post/119943127151/angular-2-template-syntax](http://victorsavkin.com/post/119943127151/angular-2-template-syntax)
+
 ###### Dependency Injection
 
 * [http://www.syntaxsuccess.com/viewarticle/dependency-injection-in-angular-2.0](http://www.syntaxsuccess.com/viewarticle/dependency-injection-in-angular-2.0)
