@@ -49,17 +49,6 @@
 * [http://blog.mgechev.com/2015/09/30/lazy-loading-components-routes-services-router-angular-2/](http://blog.mgechev.com/2015/09/30/lazy-loading-components-routes-services-router-angular-2/)
 * [http://www.syntaxsuccess.com/viewarticle/lazy-loading-in-angular-2.0](http://www.syntaxsuccess.com/viewarticle/lazy-loading-in-angular-2.0)
 
-## js：
-
-* [http://javascript.ruanyifeng.com/](http://javascript.ruanyifeng.com/ )
-* [https://developer.mozilla.org/en-US/](https://developer.mozilla.org/en-US/)
-
-## css:
-
-* [http://www.w3cplus.com/](http://www.w3cplus.com/)
-* [http://sass-lang.com/documentation/file.SASS_REFERENCE.html](http://sass-lang.com/documentation/file.SASS_REFERENCE.html)
-* [http://purecss.io/](http://purecss.io/)
-
 ## typescript:
 
 * [http://www.typescriptlang.org/Handbook](http://www.typescriptlang.org/Handbook )
