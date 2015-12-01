@@ -1,0 +1,53 @@
+3.4	host
+内部事件。
+例1：
+host: {
+    '(mouseenter)': 'focusElement("77")'
+  }
+例2：内部绑定和外部绑定的相互切换。一个属性同时在template和组件class中绑定，只要有其中一个值改变，属性值就会刷新。
+import {View, Component, bootstrap, Directive, Host, Optional} from 'angular2/angular2'
+
+@Component({
+  selector: 'bank-account',
+  properties: ['bankName:bank-name', 'id: account-id'],
+  host: {
+    '(mouseout)': 'focusElement("77")'
+  }
+})
+@View({
+  template: `
+    Bank Name: {{bankName}}
+    Account Id: {{id}}
+  `
+})
+class BankAccount {
+  bankName: string;
+  id: string;
+  
+  constructor(){
+    this.bankName = "222";
+  }
+  focusElement(isFocus) {
+    this.bankName = isFocus;
+  }
+  
+  // this property is not bound, and won't be automatically updated by Angular
+  normalizedBankName: string;
+}
+@Component({selector: 'app'})
+@View({
+  template: `
+    <bank-account [bank-name]="RBC1" account-id="4747" (click)="onclick()"></bank-account>
+  `,
+  directives: [BankAccount]
+})
+class App {
+  RBC1: string;
+  constructor(){
+    this.RBC1 = "2221";
+  }
+  onclick(){
+    this.RBC1 = this.RBC1+1;
+  }
+}
+bootstrap(App);
