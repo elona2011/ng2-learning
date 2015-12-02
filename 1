@@ -1,0 +1,30 @@
+
+
+3.5	bindings
+绑定依赖，先要import该依赖。绑定可供子模块查询。
+例：bindings: [IptvService, AuthenticateService]
+3.6	viewBindings
+viewBindings:[bind(VideoService).toClass(SpecificVideoService)]  绑定的对象只能供本模块使用，不会影响到子模块
+4	@View视图
+4.1	directives
+template中用到的angular指令和自定义指令，camel驼峰写法。
+例：directives: [EzCard],
+4.2	template
+该视图的模板，html代码。directives要用小写中划线写法。
+例：template: ‘< ez-card [title1]="'deeeeeeee'"></ ez-card >’,
+
+HTML元素属性的几种写法：
+title="Details"：title属性为字符串Details
+[title]="'Details'"： title属性为字符串Details
+[title]="Details"： title属性为变量Details
+bind-title=”’Details’”： title属性为字符串Details
+
+ <input #searchvalue (keyup)="searchArtist($event, searchvalue.value)"/>
+# searchvalue会双向绑定到input对象上，searchvalue.value可实时更新input输入值
+4.3	templateUrl
+模板地址，引入外部HTML文件。例：templateUrl: 'zippy.html'
+4.4	styles
+styles: ['.tabs1 {background-color: green;}','{...}'], 声明的样式只在本组件中可用，默认，取决于encapsulation
+4.5	styleUrls
+styleUrls: ['zippy.css'], 声明外部样式文件
+此外还可以直接写在template中，多用于关联动态样式，如生成动态获取的背景图片
