@@ -1,0 +1,36 @@
+
+6.4	ng-for
+例：<div *ng-for="#content of contentList; #i= index">
+contentList为将遍历的数组，#content为遍历数组的元素，#i为数组指针。在当前div及其子元素可用{{content}}和{{i}}进行引用
+6.5	ng-if
+当*ng-if之后的表达式为true，则显示该HTML元素；反之则删除。显示删除过程会触发Lifecycle
+例：
+<div>
+	<btv-player-menu *ng-if="isShowBtvPlayerMenu"></btv-player-menu>
+	<btv-player-minidetail-page *ng-if="isShowBtvPlayerMinidetailPage"></btv-player-minidetail-page>
+	<btv-player-reminder *ng-if="isShowBtvPlayerReminder"></btv-player-reminder>
+</div>
+6.6	ng-switch
+
+6.7	ng-model
+
+6.8	ng-style
+例1：<div [ng-style]="{'background-image':'url('+picture+')'}"></div> 背景图绑定picture变量，picture为图片地址
+例2：<div [ng-style]="{'text-align': alignExp}"></div>
+例3：<div [ng-style]="styleExp"></div> 	可以是变量
+6.9	ng-class
+根据表达式的结果添加或移除CSS属性
+例：<div class="button" [ng-class]="{active: isOn, disabled: isDisabled}">
+6.10	ng-content
+<ng-content></ng-content>表明其它组件或内容插入当前组件的位置。
+例：<zippy><p>111</p></zippy>，其中<p>111</p>将插入zippy组件的template中的ng-content位置。
+6.11	router-outlet
+router的输出位置。
+6.12	router-link
+router-link表示跳转名称为search的地址，而不是跳转到/search的url下，见@RouteConfig。
+有三种写法：
+例1：[router-link]="['./search']"	search位于当前组件路径下
+例2：[router-link]="['../search']"	search位于当前组件的父路径下
+例3：[router-link]="['/search']"	绝对路径，从根路径开始
+还可以传递参数：
+例4：[router-link] =”['/team', {teamId: 1}, 'user', {userId: 2}]”
