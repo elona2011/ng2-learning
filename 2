@@ -1,0 +1,12 @@
+T6在另一个文件CommonRules.css
+.T6 {
+  font-size: 20px;
+}
+
+本文件要extend T6，则必须将css处理为less，即@import (less)
+@import (less, reference) "css/common/common-style/CommonRules.css";
+
+#my_tv_page #record_manage_widget #mytv_record_space_tip.space-tip-withoutline{
+    left: 50px;
+    &:extend(.T6);
+}
