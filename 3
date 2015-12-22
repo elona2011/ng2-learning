@@ -1,0 +1,13 @@
+xhr.open("Get", url, false);
+xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4)
+    {
+        /* do some thing*/
+    }
+};
+xhr.send(null);
+
+xhr.onload = function() { /* do something */ }
+
+http://liubin.github.io/promises-book/#introduction
+发生错误时要像这样 reject(new Error(req.statusText)); ，创建一个Error对象后再将具体的值传进去。
