@@ -1,0 +1,31 @@
+2.window方法：
+将下面代码加入class的constructor中
+window.addEventListener("keydown",()=>{
+//1、显示miniepg
+if (window.event && window.event.which === 73) {
+this.showFlag = true;
+}
+}, true);
+
+3.Angular2方法：
+1.import
+import {KeyEventsPlugin} from 'angular2/src/core/render/dom/events/key_events';
+
+2.template中修改需要加入键盘事件的HTML元素，使用时该元素要先获得焦点
+<div (keyup) ="onKeyDown($event)" tabindex="0">
+
+3.class中加入以下方法，取得的lastKey为字符串
+onKeyDown(event): void {
+	this.lastKey = KeyEventsPlugin.getEventFullKey(event);
+	event.preventDefault();
+}
+
+9.2	自定义事件
+1.引入依赖
+import {Component, View, EventEmitter} from 'angular2/angular2';
+
+2.@Component声明
+@Component({
+    selector: 'zippy',
+    events: ['open', 'close']
+})
