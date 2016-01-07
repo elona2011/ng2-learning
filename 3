@@ -1,0 +1,31 @@
+
+9.4	Lifecycle
+Lifecycle可以看作是组件自带的系统事件，在组件运行的关键时间点可添加处理函数，alpha.37改为如下写法请注意。
+例：
+1.import
+import {OnInit, OnDestroy} from 'angular2/angular2';
+
+2.重写相关Lifecycle方法
+export class About implements OnInit, OnDestroy {
+  onInit(){
+    ...
+  }
+
+  onDestroy(){
+    ...
+  }
+}
+10	Router
+10.1	router策略
+bind(LocationStrategy).toClass(HashLocationStrategy) 使用hash url定位策略
+bind(LocationStrategy).toClass(PathLocationStrategy) 需在index.html的<head>中加入<base href="/">
+10.2	@RouteConfig
+@RouteConfig([
+	{ path: '/', redirectTo: '/search' },
+	{ path: '/search', as: 'search', component: Search },
+	{ path: '/artist/:id', as: 'artist', component: Artist }
+])
+path: '/'为默认路径。
+redirectTo：跳转到其它路径
+as：路径的别名，用于[router-link]中引用
+component：引用的组件类名
