@@ -1,0 +1,25 @@
+
+10.3	router设置
+1.import { ROUTER_BINDINGS, LocationStrategy, HashLocationStrategy, PathLocationStrategy } from 'angular2/router';
+import {bind} from 'angular2/angular2';
+import { ROUTER_DIRECTIVES, RouteConfig, RouterLink } from 'angular2/router';
+bootstrap(App, [ROUTER-BINDINGS, bind(LocationStrategy).toClass(HashLocationStrategy)]);
+
+2.@RouteConfig([
+    {path:'/', component:Start, as: 'start'}
+])
+3.<router-outlet></router-outlet>
+directives: [ROUTER_DIRECTIVES, RouterLink]
+
+4.<a [router-link]="['./user']">link to user component</a>
+10.4	router跳转
+1.import
+import {Router} from 'angular2/router';
+
+2.constructor注入
+constructor(..., public router: Router) {
+		...
+	}
+
+3. url跳转方法
+this.router.navigateByUrl('/home/livetv');
