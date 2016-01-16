@@ -1,10 +1,10 @@
-1	Typescript and ES6
+# Typescript and ES6
 angular2采用typescript语法和ES6 ，比较常用的有：
 
-1.1	箭头函数
+## 箭头函数
 chrome的调试窗口中箭头函数中的this会显示为指向Window，该显示是错误的，实际指向class
 
-1.2	let
+## let
 ```
 for(var i=1;i<5;i++){
  setTimeout(function timer(){
@@ -19,7 +19,7 @@ for(let i=1;i<5;i++){
 } //输出1，2，3，4
 ```
 
-1.3	class
+## class
 ```
 export class Hello {//定义类和构造函数
     name: string = 'World';
@@ -32,6 +32,6 @@ export class Hello {//定义类和构造函数
 ```
 Constructor构造函数，初始化数据
 
-参考：
+# 参考：
 http://www.typescriptlang.org/Handbook
 http://es6.ruanyifeng.com/

@@ -1,18 +1,19 @@
-3	@Component组件
-3.1	selector
+# @Component组件
+
+##	selector
 组件名称。
 例：``selector: 'zippy',``
-3.2	properties
+##	properties
 申明组件的外部属性,其它组件可以通过这个属性传入参数。
 例1：``properties:['myTitle1',’myTitle2’]``
 例2：``<zippy [my-title1]="title2"></zippy>`` 绑定title2变量
 例3：``<zippy [my-title2] = "’title2’"></zippy>`` 绑定title2字符串
 例4：``['tabTitle: tab-title']``申明变量tabTitle,将tab-title绑定到组件内的tabTitle变量上。内部绑定的优先级高于外部绑定，例如例4的绑定高于例2的绑定。
-3.3	events
+##	events
 申明事件。
 例：``events: ['open', 'close'],``
 
-3.4 host
+## host
 内部事件。
 例1：
 ```
@@ -70,9 +71,9 @@ class App {
 bootstrap(App);
 ```
 
-3.5 bindings
+## bindings
 绑定依赖，先要import该依赖。绑定可供子模块查询。
 例：``bindings: [IptvService, AuthenticateService]``
 
-3.6 viewBindings
+## viewBindings
 ``viewBindings:[bind(VideoService).toClass(SpecificVideoService)]``  绑定的对象只能供本模块使用，不会影响到子模块
