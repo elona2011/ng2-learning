@@ -1,6 +1,6 @@
 # ng2笔记
 
-- [概述](/notes/0%20%E6%A6%82%E8%BF%B0.md)
+0. [概述](/notes/0%20%E6%A6%82%E8%BF%B0.md)
 - [Typescript and ES6](/notes/1%20typescript%26es6.md)
 - [import,export](/notes/2%20import%26export.md)
 - [@Component](/notes/3%20component.md)
