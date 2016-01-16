@@ -1,18 +1,18 @@
 # ng2笔记
 
-* [概述](/notes/0%20%E6%A6%82%E8%BF%B0.md)
-* [Typescript and ES6](/notes/1%20typescript%26es6.md)
-* [import,export](/notes/2%20import%26export.md)
-* [@Component](/notes/3%20component.md)
-* [@View](/notes/4%20view.md)
-* [@Directive](/notes/5%20directive.md)
-* [bootstrap](/notes/6%20bootstrap.md)
-* [inject](/notes/7%20inject.md)
-* [事件](/notes/8%20event.md)
-* [Router](/notes/9%20router.md)
-* [Service服务](/notes/10%20service.md)
+- [概述](/notes/0%20%E6%A6%82%E8%BF%B0.md)
+- [Typescript and ES6](/notes/1%20typescript%26es6.md)
+- [import,export](/notes/2%20import%26export.md)
+- [@Component](/notes/3%20component.md)
+- [@View](/notes/4%20view.md)
+- [@Directive](/notes/5%20directive.md)
+- [bootstrap](/notes/6%20bootstrap.md)
+- [inject](/notes/7%20inject.md)
+- [事件](/notes/8%20event.md)
+- [Router](/notes/9%20router.md)
+- [Service服务](/notes/10%20service.md)
 
-## angular2:
+# ng2资料:
 
 * [https://angular.io/](https://angular.io/ ) Angular2官方网站
 * [https://github.com/angular/angular](https://github.com/angular/angular) 
