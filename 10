@@ -1,0 +1,25 @@
+14	报错
+Uncaught SyntaxError: Unexpected token <
+可能原因：ts文件未能成功编译成js文件，实际的错误提示是找不到js文件。
+解决：templateUrl路径不对，或是错误使用``引号，应使用’’引号
+
+EXCEPTION: Invalid argument XXXX for XXX 'function () {}' in [null]
+可能原因：参数类型不符。
+解决：重点检查传入参数的类型。
+
+EXCEPTION: Cannot resolve all parameters for ClassName (Router, ?). Make sure they all have valid type or annotations. in [null]
+可能原因：找不到class
+解决：@Inject(forwardRef(()=>ClassName)) classname: ClassName
+参考：http://blog.thoughtram.io/angular/2015/09/03/forward-references-in-angular-2.html
+
+EXCEPTION: LifeCycle.tick is called recursively
+可能原因：页面删除时focus状态未清除
+解决：将focus设置到非动态focus的元素上
+
+15	版本改变
+https://github.com/angular/angular/blob/master/CHANGELOG.md
+16	参考资料
+官方文档：
+https://angular.io/docs/js/latest/
+https://github.com/angular/angular
+https://github.com/timjacobi/angular2-education
