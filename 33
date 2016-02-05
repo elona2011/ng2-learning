@@ -1,0 +1,27 @@
+
+
+实例：
+http://blog.thoughtram.io/angular/2015/03/27/building-a-zippy-component-in-angular-2.html
+https://angular.io/docs/js/latest/quickstart.html
+http://swirlycheetah.com/try-angular2-today/
+https://medium.com/@daviddentoom/how-to-build-an-angular-2-application-with-routing-and-services-67ead73db96e
+
+Classes,Interfaces,Decorators,Modules：
+http://html5hive.org/getting-started-with-angular-2/
+
+template原理:
+http://victorsavkin.com/post/119943127151/angular-2-template-syntax
+
+依赖注入原理：
+依赖注入生成一个单例对象
+http://blog.thoughtram.io/angular/2015/05/18/dependency-injection-in-angular-2.html
+
+依赖注入的理解：注入可以理解为解决方法，依赖理解为需要的对象，模块的依赖会自动上向查询父模块及父父模块等的依赖，原文：
+http://blog.thoughtram.io/angular/2015/08/20/host-and-visibility-in-angular-2-dependency-injection.html
+
+样式及封装：
+http://blog.thoughtram.io/angular/2015/06/25/styling-angular-2-components.html
+
+lazy loading
+http://blog.mgechev.com/2015/09/30/lazy-loading-components-routes-services-router-angular-2/
+http://www.syntaxsuccess.com/viewarticle/lazy-loading-in-angular-2.0
